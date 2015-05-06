@@ -10,5 +10,5 @@ Steps to reproduce, tested on Debian GNU/Linux 7 or CentOS 6:
 3. Source the virtualenv so that the `pyff` executable becomes available in your `$PATH`
 4. Clone this repo and cd into it
 5. `make debian` or `make centos`, depending on your distribution to create `output.xml`
-That will setup a symlink to config files with the appropriate library paths (asuming `x86_64`), initate the `softhsm.db` with a new key pair and call pyFF on the `p11.fd` pipeline.
+That will setup a symlink to config files with the appropriate library paths (assuming `x86_64`), initate the `softhsm.db` with a new key pair and call pyFF on the `p11.fd` pipeline.
 6. `make test` to see that the `ds:Signature` element is missing a `ds:KeyInfo` element with a `ds:X509Certificate` element in it.
